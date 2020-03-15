@@ -10,7 +10,7 @@
     "lint-hot": "./node_modules/.bin/nodemon --watch ./src --exec \"npm run lint\"",
     "preversion": "npm run test",
     "postversion": "npm publish",
-    "postpublish": "git push origin --all; git push origin --tags",
+    "postpublish": "git push origin --all; git push origin --tags"
   },
   "keywords": [
     "fraction"
