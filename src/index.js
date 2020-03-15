@@ -19,7 +19,7 @@ const isPositive = fraction =>
 
 const isOne = fraction => isVulgarFraction(fraction) && fraction[NUMERATOR] === fraction[DENOMINATOR];
 
-const isZero = isVulgarFraction(fraction) && fraction[NUMERATOR] === 0;
+const isZero = fraction => isVulgarFraction(fraction) && fraction[NUMERATOR] === 0;
 
 const expand = (fraction, scale) => create(fraction[NUMERATOR] * scale, fraction[DENOMINATOR] * scale);
 
